@@ -116,6 +116,9 @@ header .block .logo {
 header .block h2 {
   margin-bottom: 15px;
   color: #fff;
+  font-size:24px;
+}
+header .block btn {
 }
 header .block p {
   margin-bottom: 27px;
@@ -125,6 +128,12 @@ header .block p {
 header .block .download-btn a {
   display: inline-block;
   margin-right: 10px;
+}
+header .block a {
+    color:white;
+}
+#buttonShowcase {
+   padding-top:50px;
 }
 #service {
   padding: 100px 0 20px 0;
