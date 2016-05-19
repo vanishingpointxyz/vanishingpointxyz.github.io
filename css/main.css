@@ -59,6 +59,9 @@ p {
   border: none;
   margin-bottom: 0;
 }
+.space {
+    padding: 50px;
+}
 /***********************
   OUTLINE BUTTONS
 ************************/
