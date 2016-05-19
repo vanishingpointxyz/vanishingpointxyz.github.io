@@ -248,7 +248,7 @@ header .block a {
   text-align: center;
 }
 #showcase {
-    padding: 0 0 0 40px;
+    padding: 0 0 0 0px;
 }
 #showcase .block {
   padding-top: 90px;
