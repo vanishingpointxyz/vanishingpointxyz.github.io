@@ -1,20 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-
-  <head>
-    
-    <!-- Meta Tag -->
+<html>
+     
+     <head>
+     
+        <!-- Meta Tag -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
     <!-- SEO -->
     <meta name="description" content="150 words">
-    <meta name="author" content="uipasta">
-    <meta name="url" content="http://www.yourdomainname.com">
-    <meta name="copyright" content="company name">
+    <meta name="author" content="vanishingPoint">
+    <meta name="url" content="http://www.vanishingpoint.xyz">
+    <meta name="copyright" content="Vanishing Point Virtual Production">
     <meta name="robots" content="index,follow">
     
+    
+    
+  <!-- slider -->
+    <meta charset="utf-8">
+     
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet prefetch" href="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css">
+    <link rel="stylesheet prefetch" href="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick-theme.css">
+ 
+       <style>
+        body {
+      background: #000;
+    }
+    .slider {
+	width: 100%;
+	text-align: center;
+	padding: 2px;
+	color: #232323;
+	height: 170px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	background: #232323;
+    }
+    .slider .parent-slide {
+      padding: 2px;
+    }
+    .slider img {
+      display: block;
+      margin: auto;
+    }
+    .slider:before,
+    .slider:after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      width: 100px;
+      top: 0;
+      height: 100%;
+      pointer-events: none;
+      /*makes the linkes behind clickable.*/
+    }
+    .slider:before {
+      left: 0;
+      background: linear-gradient(to right, #000000, rgba(0, 0, 0, 0));
+    }
+    .slider:after {
+      right: 0;
+      background: linear-gradient(to left, #000000, rgba(0, 0, 0, 0));
+    }
+        </style>
+ 
     
     <title>Vanishing Point Virtual Production:</title>
     
@@ -48,20 +100,17 @@
 }
   </style>
  </head>
-
-  <body>
-    
-    
-	
-	<!-- Preloader Start -->
+<body>
+ 
+ 
+ <!-- Preloader Start -->
     <div id="preloader">
 	  <div class="loader"></div>
     </div>
     <!-- Preloader End -->
-
     
     
-    <!-- Home & Menu Section Start -->
+      <!-- Home & Menu Section Start -->
     <header id="home" class="home-section">
         
         <div class="header-top-area">
@@ -110,6 +159,13 @@
             <div class="display-table">
                 <div class="display-table-cell">
                     <div class="container">
+                    
+          <div class="col-sm-12">
+                        <div class="logo">
+                            <a>Vanishing Point.</a>
+                        </div>
+                    </div>
+                    
                         <div class="row">                       
                             <div class="col-md-12 text-center">
                                 <div class="header-text">                                    
@@ -120,46 +176,94 @@
                                 </div>
                             </div>
                         </div>
-           
-        
-          <div class="col-sm-12">
-                        <div class="logo">
-                            <a>Vanishing Point.</a>
-                        </div>
                     </div>
-                    
-                             </div>
                 </div>
             </div>
         </div>
         
     </header>
     <!-- Home & Menu Section End-->
-    
-    
-    
-    
-    <!-- About Start -->
+      <!-- About Start -->
     <section id="about" class="about-section">
+
+     <!-- image slider-->
+    <div class="slider">
+ <div class="slide">
+        <img src="images/stills/apt.jpg" max-height="100%" alt="" class="img-responsive" />
+      </div>
+       <div class="slide">
+        <img src="images/stills/blueTree.jpg" max-height="100%" alt="" class="img-responsive" />
+      </div>
+       <div class="slide">
+        <img src="images/stills/extend.jpg" max-height="100%" alt="" class="img-responsive" />
+      </div>
+       <div class="slide">
+        <img src="images/stills/flame.jpg" max-height="100%" alt="" class="img-responsive" />
+      </div>
+       <div class="slide">
+        <img src="images/stills/forest.jpg" max-height="100%" alt="" class="img-responsive" />
+      </div>
+       <div class="slide">
+        <img src="images/stills/maya.jpg" max-height="100%" alt="" class="img-responsive" />
+      </div>
+       <div class="slide">
+        <img src="images/stills/mesh.jpg" max-height="100%" alt="" class="img-responsive" />
+      </div>
+      <div class="slide">
+        <img src="images/stills/subway.jpg" max-height="100%" alt="" class="img-responsive" />
+      </div>
+      <div class="slide">
+        <img src="images/stills/sun.jpg" max-height="100%" alt="" class="img-responsive" />
+      </div>
+      <div class="slide">
+        <img src="images/stills/table.jpg" max-height="100%" alt="" class="img-responsive" />
+      </div>
+      <div class="slide">
+        <img src="images/stills/trees.jpg" max-height="100%" alt="" class="img-responsive" />
+      </div>
+       <div class="slide">
+        <img src="images/stills/ue.jpg" max-height="100%" alt="" class="img-responsive" />
+      </div>
+    </div>
+     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+ 
+    <script type="text/javascript">
+     $(document).ready(function(){
+      $('.slider').slick({
+	  infinite: true,
+	  pauseOnHover: false,
+      autoplay:true,
+      autoplaySpeed: 0,
+      speed: 4000,
+      arrows:false,
+      centerMode:true,
+      slidesToShow:5,
+      slidesToScroll:1,
+      cssEase: 'linear',
+	 
+      });
+    });
+    </script>
+    
+     <!-- image slider END-->
+    
+   <div class="container">
          <div class="row">
-               
-              <div class="col-md-6 col-sm-12 col-xs-12">
-                <img src="images/bg/me.jpg" width="420" height="500" >
-              </div>
-                
-              <div class="col-md-6 col-sm-12 col-xs-12">
-                <div class="about-me section-space-padding">
-                  
-                  <h2>Vanishing Point Ltd.</h2>
-                  
+              <div class="col-sm-12">
+    <div class="section-space-padding">
+                  <div class="section-title">
+                  <h2>Vanishing Point </h2>
+                  </div>
                   <p>We are a small team, each with more than a decade of experience in visual effects and film production.
                   We have a passion for problem solving, and use high end hardware and software techniques to bring virtual production to any studio or production, regardless of size.</p>
-                 </div>
-             
+                </div>
+             </div>
               </div>
                 
-          </div>
-       </section>
+      </div>
+  </section>
        <!-- About End -->
 
     
@@ -170,7 +274,8 @@
                 <div class="col-sm-12">
                     <div class="section-title">
                         <h2>Vector.</h2>
-                        <p>Vector is our flagship product. A combination of hardware elements and custom software that allows you to use cutting edge virtual production tools right away, out of the box. We have designed it from the ground up to make it simple to use, and to bring camera tracking and real-time compositing into your studio quickly and easily, without writing any code.</p>
+                        <p> <strong> Plug and Play virtual production solution. </strong> </p>
+                        <p>Vector is our flagship product. A combination of hardware elements and custom software that allows you to use cutting edge virtual production tools right away, out of the box. We have designed it from the ground up to make it simple to use, and to bring camera tracking and real-time compositing into your studio quickly and easily, without writing any code. Plug in the capture card, plug in the sensor and start tracking.</p>
                     </div>
                 </div>
             </div>
@@ -179,9 +284,9 @@
                 <div align="center" class="col-sm-12">
                   
                         <h2>Feature Demo:</h2>
-                        </div>
+             </div>
                        
-                        </div>
+          </div>
             
             <div class="portfolio-inner">
                 <div class="row">
@@ -193,23 +298,23 @@
                 </video>
 				</div>
                 </div>
-     			</div>
+		  </div>
                 
                  <div class="row">
                  <div align="center" class="col-sm-12">
                         <h2>Included:</h2>
                    </div>
           </div>
-                         <div align="left" class="row">
+                         <div align="middle" class="row">
                 <ul class="vector">
-                    <li class="filter" data-filter="all">USB 3 hardware sensor, attached to your sdi/hdmi camera, or a virtual camera rig.</li>
-                    <li class="filter" data-filter="all">PCI capture card, to stream video into the real-time composite.</li>
-                    <li class="filter" data-filter="all">Robust tracking algorithms that localize the camera in 3d space.</li>
-                    <li class="filter" data-filter="all">Marker integration to track simple props, or map a more complex object.</li>
-                      <li class="filter" data-filter="all">Intuitive, interactive lens calibration tools for any camera.</li>
-                        <li class="filter" data-filter="all">Automatic Lens-to-sensor offset tools.</li>
-                         <li class="filter" data-filter="all">Automatic floor plane snapping, and set lineup tools to easily integrate the virtual into the real world.</li>
-                 <li class="filter" data-filter="all">Area mapping to scan a space and export to an obj file.</li>                                  
+                    <p> <strong>- USB 3 hardware sensor</strong> with mounting thread. Easily attached to your sdi/hdmi camera, or a virtual camera rig.</p>
+                    <p> <strong>- PCI capture card</strong>, to stream video into the real-time composite.</p>
+                    <p> <strong>- Robust tracking algorithms</strong> that localize the camera in 3d space.</p>
+                    <p> <strong>- Marker integration</strong> to track simple props, or map a more complex object.</p>
+                     <p> <strong>- Intuitive, interactive lens calibration tools</strong> to quickly calibrate any camera, with any lens.</p>
+                      <p> <strong>- Automatic Lens-to-sensor offset</strong> tools.</p>
+                      <p> <strong>- Automatic floor plane</strong> snapping, and set lineup tools to easily integrate the virtual into the real world.</p>
+                      <p> <strong>- Area mapping</strong> to scan a space and export to an obj file.</p>                                  
                  </ul>
             </div>
       </div>
@@ -217,16 +322,16 @@
                 <div class="row">
                  <div align="center" class="col-sm-12">
                         <h2>Plugins:</h2>
-                         <p>We supply plugins to recieve the data stream from Vector and apply it to cameras or props in your production software. Currently we ship plugins for Maya and Unreal engine, and will support Unity, Motionbuilder and Lumberyard in the coming weeks.</p>
+                         <p>We supply plugins to recieve the data stream from Vector and apply it to cameras or props in your production software. Currently we ship plugins for Maya and Unreal engine, and will support Unity, Motionbuilder and Lumberyard in the coming weeks. If you use another application, let us know! We aim to support as many third-party display engines as possible.</p>
                   </div>
       </div>
                        
         
       <div class="text-center margin-top-50">
           <a class="button button-style button-style-dark button-style-icon fa fa-long-arrow-right smoth-scroll" href="#contact">Request a quote</a>
-            </div>
+      </div>
      
-     </section>
+  </section>
     <!-- Portfolio End -->
          
     
@@ -243,7 +348,7 @@
                         <p>We have years of experience in film production, both on-location and behind the scenes, in asset creation, scene layout, motion capture, computer vision. We can help you make your project happen, and always welcome the oppurtunity to push the technology forward. Get in touch, let's talk about it. </p>
                     </div>
                 </div>
-            </div>          
+          </div>          
       </div>       
   </section>
     <!-- Services End -->
@@ -260,34 +365,18 @@
                         <p>We are always on hand for product support, to answer questions or discuss projects.</p>
                     </div>
                 </div>
-            </div>
+         </div>
             
             
            <div class="text-center margin-top-10 margin-bottom-50">
             <div class="row">
-            
-               <div class="col-md-4 col-sm-4">
-                <div class="contact-us-detail">  
-                 <i class="fa fa-mobile color-6"></i>
-                  <p><a href="tel:+1234567890">+1234 567 890</a></p>
-                 </div>
-                </div>
-               
-               <div class="col-md-4 col-sm-4">
-                <div class="contact-us-detail">
-                 <i class="fa fa-mail-reply color-5"></i>
-                  <p><a href="mailto:info@vanishingpoint.xyz">info@vanishingpoint.xyz</a></p>
-                 </div>
-                </div>
+             <p>You can reach us at: <a href="mailto:info@vanishingpoint.xyz">info@vanishingpoint.xyz</a> : or use the form below.</p>
                  
-               <div class="col-md-4 col-sm-4">
-                <div class="contact-us-detail">
-                 <i class="fa fa-clock-o color-3"></i>
-                  <p>Mon - Fri 09:00 – 18:00</p>
-                 </div>
-                </div>
-              
-               </div>
+             </div>
+         </div>
+                 
+            
+      </div>
               </div>
             
          
@@ -301,26 +390,26 @@
 					  <div class="col-sm-6">
 						<div class="form-group">
 						  <input type="text" id="name" class="form-control" placeholder="Your Name">
-						 </div>
-                        </div>
+					    </div>
+                    </div>
 								
                        <div class="col-sm-6">
 					    <div class="form-group">
 						 <input type="email" id="email" class="form-control" placeholder="Your Email">
 						 </div>
-                        </div>
+                    </div>
                         
                         <div class="col-sm-6">
 						  <div class="form-group">
 							<input type="text" id="website" class="form-control" placeholder="Your Website">
-						   </div>
-                          </div>
+					      </div>
+                    </div>
                           
                         <div class="col-sm-6">
 						  <div class="form-group">
 							<input type="text" id="address" class="form-control" placeholder="Where are You From?">
-						   </div>
-                          </div>
+					      </div>
+                    </div>
 								
                          <div class="col-sm-12">
 						  <select id="subject" class="form-group form-control">
@@ -329,23 +418,23 @@
 							<option>Support</option>
 							<option>Other query</option>                          
 						   </select>
-                          </div>
+                    </div>
 								
                        <div class="col-sm-12">
 					    <div class="textarea-message form-group">
 					      <textarea id="message" class="textarea-message form-control" placeholder="Your Message" rows="5"></textarea>
-						  </div>
-                         </div>
+					     </div>
+                    </div>
                    
                    
                     <div class="text-center">      
 		   <button type="submit" class="button button-style button-style-dark button-style-icon fa fa-long-arrow-right text-center">Submit</button>
-	                  </div>
+                    </div>
                        
                   </form>
                    
-				</div>
-               </div>
+			 </div>
+           </div>
             
             
             <div class="col-md-6">   
@@ -368,7 +457,7 @@
        </ul>
       </div>
        
-     </section>
+  </section>
      <!-- Contact End -->
        
         
@@ -394,13 +483,15 @@
     
     
     <!-- All Javascript Plugins  -->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/plugin.js"></script>
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyC0HAKwKinpoFKNGUwRBgkrKhF-sIqFUNA"></script>
-    
+      
     <!-- Main Javascript File  -->
     <script type="text/javascript" src="js/scripts.js"></script>
   
   
   </body>
  </html>
+    
+    
+ 
+</body></html>

@@ -38,6 +38,7 @@
 
 /* Global Style */
 
+
 body {
 	font-size: 15px;
 	font-weight: 400;
@@ -51,6 +52,7 @@ html,
 body {
     height: 100%
 }
+
 
 ::selection {
     background-color: #24b662;
@@ -69,6 +71,7 @@ h4,
 h5,
 h6 {
 	font-family: 'Poppins', sans-serif;
+	color: #000;
 }
 
 a {
@@ -76,7 +79,9 @@ a {
 }
 
 img {
-    width: 100%;
+	float: left;
+	height: 500px;
+	width: 100%;
 }
 
 a:hover {
@@ -90,7 +95,10 @@ a:focus {
 }
 
 p {
-    line-height: 32px;
+	line-height: 32px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	color: #666;
 }
 
 ul,
@@ -128,13 +136,14 @@ fieldset {
 	margin-bottom: 30px;
 	border-bottom-width: 4px;
 	border-bottom-style: solid;
-	border-bottom-color: #3399FF;
+	border-bottom-color: #47687d;
 }
 
 .section-title p {
-    font-weight: 400;
+	font-weight: 400;
 	line-height: 25px;
 	margin-bottom: 40px;
+	color: #666;
 }
 
 .bg-cover {
@@ -197,8 +206,8 @@ fieldset {
 .button-style:hover,
 .button-style:active,
 .button-style:focus {
-	background: #24b662;
-	color: #ffffff !important;
+	background: #47687d;
+	color: #F0F0F0 !important;
 }
 
 .button-style:before {
@@ -253,18 +262,18 @@ body.loaded #preloader{
 }
 
 .loader{
-    display: block;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    width: 150px;
-    height: 150px;
-    margin: -75px 0 0 -75px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #24b662;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
+	display: block;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	width: 150px;
+	height: 150px;
+	margin: -75px 0 0 -75px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: #0099CC;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
 }
 
 .loader:before{
@@ -330,9 +339,24 @@ body.loaded #preloader{
 }
 
 .home-section-background {
-    position: relative;
-    height: 100%;
-    background: url(../images/bg/bg.jpg);
+	position: relative;
+	width: 100%;
+	height: 100%;
+	max-height: 100%;
+	max-width: 100%;
+	background: url(../images/bg/bg.jpg);
+	background-size: cover;
+	z-index: 1;
+	background-repeat: no-repeat;
+/*	background-position-y: 10%;*/
+	background-position-x: 50%;
+}
+
+.home-section-background-img {
+    position: contain;
+    max-height: 100%;
+	max-width: 100%;
+    background: url(../images/bg/bg_sml.jpg);
     background-size: cover;
     z-index: 1;
 }
@@ -349,9 +373,12 @@ body.loaded #preloader{
 }
 
 .display-table {
-    display: table;
-    width: 100%;
-    height: 100%;
+	display: table;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	
 }
 
 .display-table-cell {
@@ -362,10 +389,11 @@ body.loaded #preloader{
 .header-text {}
 
 .home-section-background h2 {
-    color: #f8f8f8;
-    font-size: 50px;
-    letter-spacing: 5px;
-    margin: 0;
+	color: #f8f8f8;
+	font-size: 50px;
+	letter-spacing: 5px;
+	margin: 0;
+	padding-top: 20px;
 }
 
 .home-section-background p {
@@ -424,7 +452,7 @@ body.loaded #preloader{
 	text-transform: uppercase;
 	letter-spacing: 20px;
 	font-weight: 900;
-	font-size: 44px;
+	font-size: xx-large;
 	text-align: center;
 }
 
@@ -499,11 +527,10 @@ body.loaded #preloader{
 	background-color: #F9F9F9;
 }
 
-.about-section img {
-	position: absolute;
-}
 
-.about-me {}
+.about-me {
+	text-align: center;
+}
 
 .about-me h2 {
 	padding: 0px 50px;
@@ -629,15 +656,8 @@ ul.portfolio li.active {
 
 .testimonial-carousel-list {
     padding: 30px;
-    background-color: #fff;
-    border-radius: 4px;
-	box-shadow: 0px 1px 2px 0px rgba(90, 91, 95, 0.15);
+    background-color: #fff; 
     transition: all 0.3s ease-in-out;
-}
-
-.testimonial-carousel-list:hover {
-    box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.3);
-    top: -5px;
 }
 
 .testimonial-word {
@@ -1000,10 +1020,7 @@ ul.portfolio li.active {
 
 
 @media only screen and (max-width: 991px) {
-    .about-section img {
-        position: inherit;
-     }
-	 
+  	 
      .call-to-action h2 {
         font-size: 20px;
 	 }
@@ -1036,7 +1053,7 @@ ul.portfolio li.active {
         padding: 11px 15px;
     }
     .navigation-menu .navbar-nav li a:hover {
-        color: #24b662;
+	color: #0099CC;
     }
     .navigation-background .navigation-menu .navbar-nav li a:hover {
         color: #24b662;
@@ -1058,13 +1075,15 @@ ul.portfolio li.active {
         background: rgba(0, 0, 0, .9);
     }
     .home-section-background {
-        padding-top: 120px;
+	padding-top: 120px;
     }
     .home-section-background h2 {
 	font-size: 22px;
     }
     .section-title h2 {
-        font-size: 22px;
+	font-size: 22px;
+	color: #000;
+	padding-top: 100px;
     }
     .testimonial-word {
         padding: 0;
@@ -1151,8 +1170,8 @@ ul.portfolio li.active {
 
 .scroll-to-top:hover,
 .scroll-to-top:focus {
-    background-color: #1bab58;
-    color: #ffffff;
+	background-color: #0099CC;
+	color: #ffffff;
 }
 
 
