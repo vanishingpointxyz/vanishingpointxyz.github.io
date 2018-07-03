@@ -70,8 +70,8 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Poppins', sans-serif;
 	color: #000;
+	font-family: Poppins, sans-serif;
 }
 
 a {
@@ -90,8 +90,9 @@ a:hover {
 }
 
 a:focus {
-    outline: none;
-    text-decoration: none;
+	outline: none;
+	text-decoration: none;
+	font-family: Poppins, sans-serif;
 }
 
 p {
@@ -99,6 +100,7 @@ p {
 	padding-top: 0px;
 	padding-bottom: 0px;
 	color: #666;
+	text-align: center;
 }
 
 ul,
@@ -237,6 +239,7 @@ fieldset {
 .button-style-dark {
 	border: 3px solid #000000 !important;
 	color: #000000;
+	font-family: Poppins, sans-serif;
 }
 
 
@@ -454,6 +457,7 @@ body.loaded #preloader{
 	font-weight: 900;
 	font-size: xx-large;
 	text-align: center;
+	font-family: Poppins, sans-serif;
 }
 
 .logo b {
@@ -463,6 +467,7 @@ body.loaded #preloader{
 	letter-spacing: 6px;
 	font-weight: 900;
 	font-size: 14px;
+	font-family: Poppins, sans-serif;
 }
 
 .navigation-menu .navbar-nav li a {
@@ -1084,6 +1089,7 @@ ul.portfolio li.active {
 	font-size: 22px;
 	color: #000;
 	padding-top: 100px;
+	font-family: Poppins, sans-serif;
     }
     .testimonial-word {
         padding: 0;
@@ -1154,23 +1160,23 @@ ul.portfolio li.active {
 /* Scroll To Top */
 
 .scroll-to-top {
-    background-color: #24b662;
-    display: none;
-    width: 50px;
-    height: 50px;
-    font-size: 25px;
-    line-height: 50px;
-    text-align: center;
-    color: #fff;
-    position: fixed;
-    right: 0px;
-    bottom: 50px;
-    z-index: 999;
+	background-color: #0099CC;
+	display: none;
+	width: 50px;
+	height: 50px;
+	font-size: 25px;
+	line-height: 50px;
+	text-align: center;
+	color: #fff;
+	position: fixed;
+	right: 0px;
+	bottom: 50px;
+	z-index: 999;
 }
 
 .scroll-to-top:hover,
 .scroll-to-top:focus {
-	background-color: #0099CC;
+	background-color: #CCCCCC;
 	color: #ffffff;
 }
 
