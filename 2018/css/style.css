@@ -256,7 +256,10 @@ fieldset {
 }
 
 .section-space-padding {
-    padding: 100px 0px;
+	padding-top: 30px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 0px;
 }
 
 .section-title {
@@ -275,6 +278,9 @@ fieldset {
 	border-bottom-width: 4px;
 	border-bottom-style: solid;
 	border-bottom-color: #47687d;
+	border-top-width: 4px;
+	border-top-style: solid;
+	border-top-color: #47687d;
 }
 
 .section-title p {
@@ -946,7 +952,7 @@ ul.portfolio li.active {
 /* Contact Us */
 
 .contact-us {
-	background-color: #f9f9f9;
+	background-color: #CCC;
 }
 
 .contact-us-detail {
@@ -1227,8 +1233,9 @@ ul.portfolio li.active {
     .section-title h2 {
 	font-size: 22px;
 	color: #000;
-	padding-top: 100px;
+	padding-top: 6px;
 	font-family: Poppins, sans-serif;
+	text-transform: capitalize;
     }
     .testimonial-word {
         padding: 0;
