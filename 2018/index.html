@@ -24,54 +24,14 @@
     <link rel="stylesheet prefetch" href="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick-theme.css">
  
        <style>
-        body {
-      background: #000;
-    }
-    .slider {
-	width: 100%;
-	text-align: center;
-	padding: 2px;
-	color: #232323;
-	height: 170px;
-	margin-top: 0px;
-	margin-right: auto;
-	margin-bottom: 0px;
-	margin-left: auto;
-	background: #232323;
-    }
-    .slider .parent-slide {
-      padding: 2px;
-    }
-    .slider img {
-      display: block;
-      margin: auto;
-    }
-    .slider:before,
-    .slider:after {
-      content: "";
-      position: absolute;
-      z-index: 1;
-      width: 100px;
-      top: 0;
-      height: 100%;
-      pointer-events: none;
-      /*makes the linkes behind clickable.*/
-    }
-    .slider:before {
-      left: 0;
-      background: linear-gradient(to right, #000000, rgba(0, 0, 0, 0));
-    }
-    .slider:after {
-      right: 0;
-      background: linear-gradient(to left, #000000, rgba(0, 0, 0, 0));
-    }
+
         </style>
  
     
     <title>Vanishing Point Virtual Production:</title>
     
     <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="apple-touch-icon" sizes="144x144" type="image/x-icon" href="images/favicon/apple-touch-icon.png">
     
     <!-- All CSS Plugins -->
@@ -189,41 +149,41 @@
     <section id="about" class="about-section">
 
      <!-- image slider-->
-    <div class="slider">
- <div class="slide">
+    <div class="scroller">
+ <div class="slide2">
         <img src="images/stills/apt.jpg" max-height="100%" alt="" class="img-responsive" />
       </div>
-       <div class="slide">
+       <div class="slide2">
         <img src="images/stills/blueTree.jpg" max-height="100%" alt="" class="img-responsive" />
       </div>
-       <div class="slide">
+       <div class="slide2">
         <img src="images/stills/extend.jpg" max-height="100%" alt="" class="img-responsive" />
       </div>
-       <div class="slide">
+       <div class="slide2">
         <img src="images/stills/flame.jpg" max-height="100%" alt="" class="img-responsive" />
       </div>
-       <div class="slide">
+       <div class="slide2">
         <img src="images/stills/forest.jpg" max-height="100%" alt="" class="img-responsive" />
       </div>
-       <div class="slide">
+       <div class="slide2">
         <img src="images/stills/maya.jpg" max-height="100%" alt="" class="img-responsive" />
       </div>
-       <div class="slide">
+       <div class="slide2">
         <img src="images/stills/mesh.jpg" max-height="100%" alt="" class="img-responsive" />
       </div>
-      <div class="slide">
+      <div class="slide2">
         <img src="images/stills/subway.jpg" max-height="100%" alt="" class="img-responsive" />
       </div>
-      <div class="slide">
+      <div class="slide2">
         <img src="images/stills/sun.jpg" max-height="100%" alt="" class="img-responsive" />
       </div>
-      <div class="slide">
+      <div class="slide2">
         <img src="images/stills/table.jpg" max-height="100%" alt="" class="img-responsive" />
       </div>
-      <div class="slide">
+      <div class="slide2">
         <img src="images/stills/trees.jpg" max-height="100%" alt="" class="img-responsive" />
       </div>
-       <div class="slide">
+       <div class="slide2">
         <img src="images/stills/ue.jpg" max-height="100%" alt="" class="img-responsive" />
       </div>
     </div>
@@ -231,23 +191,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
  
-    <script type="text/javascript">
-     $(document).ready(function(){
-      $('.slider').slick({
-	  infinite: true,
-	  pauseOnHover: false,
-      autoplay:true,
-      autoplaySpeed: 0,
-      speed: 4000,
-      arrows:false,
-      centerMode:true,
-      slidesToShow:5,
-      slidesToScroll:1,
-      cssEase: 'linear',
-	 
-      });
-    });
-    </script>
     
      <!-- image slider END-->
     
@@ -256,10 +199,15 @@
               <div class="col-sm-12">
     <div class="section-space-padding">
                   <div class="section-title">
-                  <h2>Vanishing Point </h2>
+                  <h2>Vanishing Point.</h2>
                   </div>
                   <p>We are a small team, each with more than a decade of experience in visual effects and film production.
                   We have a passion for problem solving, and use high end hardware and software techniques to bring virtual production to any studio or production, regardless of size.</p>
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
                 </div>
              </div>
               </div>
@@ -277,15 +225,46 @@
                     <div class="section-title">
                         <h2>Vector.</h2>
                         <p> <strong> Plug and Play virtual production solution. </strong> </p>
+                    
+                    </div>
+                    </div>
+                    </div>
+                    
+                               <!--
+           <div class="container">
+           <div class="ba-sliderCompare" width="60%">
+  <img src="images\compare\Wipe_compFrame.jpg" alt="">       
+ <overlay>Un-edited frame captured from our Unreal plugin.</overlay>
+  <div class="resize">
+    <img src="images\compare\Wipe_blueFrame.jpg" alt="">
+     <overlayLeft>Un-edited frame captured directly from camera.</overlayLeft>
+
+  </div>
+  <span class="handle"></span>
+</div>
+</div>
+                               image compare -->
+                    
+                     <div class="row">
+                <div class="col-sm-12">
+                    <div class="section-title">
+                    
+                    
                         <p>Vector is our flagship product. A combination of hardware elements and custom software that allows you to use cutting edge virtual production tools right away, out of the box. We have designed it from the ground up to make it simple to use, and to bring camera tracking and real-time compositing into your studio quickly and easily, without writing any code. Plug in the capture card, plug in the sensor and start tracking.</p>
                     </div>
                 </div>
             </div>
             
+            
+
+
+
+
+            
            <div class="row">
                 <div align="center" class="col-sm-12">
                   
-                        <h2>Feature Demo:</h2>
+                        <h2>Full feature demo:</h2>
              </div>
                        
           </div>
@@ -294,8 +273,8 @@
                 <div class="row">
                 <div align="center" id="video">
 
-                <video width="615" height="331" align="middle" controls>
-                  <source src="vid/Vector_Demo_002.mp4" type="video/mp4">
+                <video width="100%"  align="middle" controls>
+                  <source src="vid/Vector_Demo_006_sml.mp4" type="video/mp4">
                 Your browser does not support video playback.
                 </video>
 				</div>
@@ -311,19 +290,21 @@
                 <ul class="vector">
                     <p> <strong>- USB 3 hardware sensor</strong> with mounting thread. Easily attached to your sdi/hdmi camera, or a virtual camera rig.</p>
                     <p> <strong>- PCI capture card</strong>, to stream video into the real-time composite.</p>
-                    <p> <strong>- Robust tracking algorithms</strong> that localize the camera in 3d space.</p>
+                    <p> <strong>- Robust tracking algorithms</strong> that localize the camera in 3d space for markerless camera tracking, indoor or outdoor.</p>
                     <p> <strong>- Marker integration</strong> to track simple props, or map a more complex object.</p>
                      <p> <strong>- Intuitive, interactive lens calibration tools</strong> to quickly calibrate any camera, with any lens.</p>
                       <p> <strong>- Automatic Lens-to-sensor offset</strong> tools.</p>
                       <p> <strong>- Automatic floor plane</strong> snapping, and set lineup tools to easily integrate the virtual into the real world.</p>
-                      <p> <strong>- Area mapping</strong> to scan a space and export to an obj file.</p>                                  
+                      <p> <strong>- Area mapping</strong> to scan a space and export to an obj file.</p>                  
+                        <p> <strong>- Unreal Engine plugin</strong> including live tracking of camera and markers, chroma keying / color correction / matte controls, prop or light constraining to tracked markers, time syncing functions and a HUD with timecode and slate information.</p>    
+                        <p> <strong>- Maya plugin</strong> including live tracking of camera and markers, recording to keyframes and auto-naming of recorded takes from slate.</p>                            
                  </ul>
             </div>
       </div>
               <div class="container">
                 <div class="row">
                  <div align="center" class="col-sm-12">
-                        <h2>Plugins:</h2>
+                        <h2>Third-party Plugins:</h2>
                          <p>We supply plugins to connect to Vector, grab the streaming data and apply it to cameras or props in your production software. Currently we ship plugins for Maya and Unreal engine, and will support Unity, Motionbuilder and Lumberyard in the coming weeks. If you use another application, let us know! We aim to support as many third-party display engines as possible.</p>
                   </div>
       </div>
@@ -348,7 +329,7 @@
                 <div class="col-sm-12">
                     <div class="section-title">
                         <h2>Our Services.</h2>
-                        <p>We have years of experience in film production, both on-location and behind the scenes, in asset creation, art department, scene layout, motion capture, tracking systems, computer vision and software design. We can help you make your project happen, and always welcome the oppurtunity to push our technology forward. Get in touch, let's talk about it. </p>
+                        <p>We have years of experience in film production, both on-location and behind the scenes, in asset creation, art department, scene layout, motion capture, tracking systems, computer vision and software design. We can help you make your project happen, and always welcome the opportunity to push our technology forward. Get in touch, let's talk about it. </p>
                     </div>
                 </div>
           </div>          
@@ -365,7 +346,7 @@
                 <div class="col-sm-12">
                     <div class="section-title">
                         <h2>Contact Us.</h2>
-                        <p>We are always on hand for product support, to answer questions or discuss projects.</p>
+                        <p>We are always on hand for product support, to answer questions or discuss projects. Currently we are on the lookout for talented people to help us build the next generation of our technology. If you are interested in joining us, and have experience in computer vision, game engine development or visual effects, drop us a line. </p>
                     </div>
                 </div>
          </div>
@@ -376,11 +357,9 @@
              <p>You can reach us at: <a href="mailto:info@vanishingpoint.xyz">info@vanishingpoint.xyz</a> : or use the form below.</p>
                  
              </div>
-         </div>
-                 
-            
+         </div>    
       </div>
-              </div>
+       </div>
             
          
          <div class="row">
@@ -391,7 +370,7 @@
                   <form>
                     
 					  <div class="col-sm-6">
-						<div class="form-group">
+						<div  class="form-group">
 						  <input type="text" id="name" class="form-control" placeholder="Your Name">
 					    </div>
                     </div>
@@ -419,7 +398,8 @@
 							<option value="" selected disabled>Subject</option>
 							<option>Vector Product query/quote request</option>
 							<option>Support</option>
-							<option>Other query</option>                          
+							<option>Other query</option>   
+                            <option>Looking for work?</option>                         
 						   </select>
                     </div>
 								
@@ -438,15 +418,7 @@
                    
 			 </div>
            </div>
-            
-            
-            <div class="col-md-6">   
-              <div id="my-address" class="map space-set">
-              <p>Map will not be display without Internet Connection.</p>
-            </div>
-           </div>
-           
-        
+                               
         </div>
        </div>
        
