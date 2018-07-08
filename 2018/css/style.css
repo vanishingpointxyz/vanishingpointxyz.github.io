@@ -192,8 +192,8 @@ body {
 
 
 ::selection {
-    background-color: #24b662;
-    color: #ffffff;
+	background-color: #0099CC;
+	color: #ffffff;
 }
 
 ::-moz-selection {
