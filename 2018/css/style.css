@@ -208,7 +208,8 @@ h4,
 h5,
 h6 {
 	color: #000;
-	font-family: Poppins, sans-serif;
+	font-size: 18px;
+	font-family: Verdana, Geneva, sans-serif;
 }
 
 a {
@@ -264,7 +265,7 @@ fieldset {
 }
 
 .section-title {
-    text-align: center;
+	text-align: center;
 }
 
 .section-title h2 {
@@ -282,14 +283,25 @@ fieldset {
 	border-top-width: 4px;
 	border-top-style: solid;
 	border-top-color: #47687d;
+	font-family: Poppins, sans-serif;
 }
 
 .section-title p {
 	font-weight: 400;
 	line-height: 25px;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	color: #666;
-	margin-top: 40px;
+	margin-top: 20px;
+	text-align: left;
+}
+
+.section-title p2 {
+	line-height: 15px;
+	margin-bottom: 10px;
+	color: #333;
+	margin-top: 10px;
+	font-size: 18px;
+	text-align: left;
 }
 
 .bg-cover {
