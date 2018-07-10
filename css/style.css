@@ -204,12 +204,23 @@ body {
 h1,
 h2,
 h3,
-h4,
 h5,
 h6 {
 	color: #000;
 	font-size: 18px;
 	font-family: Verdana, Geneva, sans-serif;
+}
+
+h4 {
+	font-weight: 450;
+	margin-bottom: 20px;
+	color: #333;
+	margin-top: 20px;
+	text-align: centre;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:100%;
 }
 
 a {
@@ -302,6 +313,14 @@ fieldset {
 	margin-top: 10px;
 	font-size: 18px;
 	text-align: left;
+}
+.section-title p3 {
+	font-weight: 200;
+	line-height: 25px;
+	margin-bottom: 20px;
+	color: #666;
+	margin-top: 20px;
+	text-align: centre;
 }
 
 .bg-cover {
@@ -436,31 +455,31 @@ body.loaded #preloader{
 }
 
 .loader:before{
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #24b662;
-    -webkit-animation: spin 3s linear infinite;
-    animation: spin 3s linear infinite;
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	right: 5px;
+	bottom: 5px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: #666666;
+	-webkit-animation: spin 3s linear infinite;
+	animation: spin 3s linear infinite;
 }
 
 .loader:after{
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #24b662;
-    -webkit-animation: spin 1.5s linear infinite;
-    animation: spin 1.5s linear infinite;
+	content: "";
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	right: 15px;
+	bottom: 15px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: #666666;
+	-webkit-animation: spin 1.5s linear infinite;
+	animation: spin 1.5s linear infinite;
 }
 
 @-webkit-keyframes spin {
