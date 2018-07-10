@@ -232,7 +232,7 @@ function drags(dragElement, resizeElement, container) {
 		
         $(window).load(function(){
         $(".typing").typed({
-            strings: ["virtual production for everyone."],    /* You can change the home section typing text from
+            strings: ["virtual production for everyone"],    /* You can change the home section typing text from
 	                                                                                            here and do not use "&" use "and" */
             typeSpeed: 30
           });
