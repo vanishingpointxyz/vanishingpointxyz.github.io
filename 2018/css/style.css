@@ -267,7 +267,34 @@ fieldset {
 .section-title {
 	text-align: center;
 }
-
+.section-title2 {
+	text-align: center;
+}
+.section-title {
+	text-align: center;
+}
+.section-title2 {
+	text-align: center;
+	text-transform: uppercase;
+}
+.section-title2 h2 {
+	margin-top: 0;
+	font-weight: 700;
+	border-radius: 2px;
+	font-size: 20px;
+	margin: 0 auto;
+	padding: 10px 0;
+	width: 350px;
+	margin-bottom: 30px;
+	border-bottom-width: 4px;
+	border-bottom-style: solid;
+	border-bottom-color: #47687d;
+	border-top-width: 4px;
+	border-top-style: solid;
+	border-top-color: #47687d;
+	font-family: Poppins, sans-serif;
+	letter-spacing: 6px;
+}
 .section-title h2 {
 	margin-top: 0;
 	font-weight: 600;
@@ -498,26 +525,35 @@ body.loaded #preloader{
 }
 
 .home-section-background {
-	position: relative;
+	/*position: relative;*/
 	width: 100%;
 	height: 100%;
 	max-height: 100%;
 	max-width: 100%;
 	background: url(../images/bg/bg.jpg);
-	background-size: cover;
+	background-size: auto;
 	z-index: 1;
 	background-repeat: no-repeat;
-/*	background-position-y: 10%;*/
+	/*	background-position-y: 10%;*/
 	background-position-x: 50%;
+	background-color: #000;
+
 }
 
 .home-section-background-img {
-    position: contain;
-    max-height: 100%;
+   position: relative;
+	width: 100%;
+	height: 100%;
+	max-height: 100%;
 	max-width: 100%;
-    background: url(../images/bg/bg_sml.jpg);
-    background-size: cover;
-    z-index: 1;
+	background: url(../images/bg/bg.jpg);
+	background-size: auto;
+	z-index: 1;
+	background-repeat: no-repeat;
+	/*	background-position-y: 10%;*/
+	background-position-x: 50%;
+	background-color: #000;
+	background-position-y: 50%;
 }
 
 .home-section-background:after {
@@ -600,9 +636,17 @@ body.loaded #preloader{
 }
 
 .logo {
-    padding-top: 28px;
-    -webkit-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+	padding-top: 50%;
+	-webkit-transition: all 0.3s ease-out;
+}
+.logoTop {
+	padding-top: 28px;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	font: Poppins;
+	font-family: Poppins;
+	letter-spacing: 4px;
+	font-size: 15px;
 }
 
 .logo a {
@@ -1244,11 +1288,14 @@ ul.portfolio li.active {
 	font-size: 22px;
     }
     .section-title h2 {
-	font-size: 22px;
+	font-size: 18px;
 	color: #000;
 	padding-top: 6px;
 	font-family: Poppins, sans-serif;
-	text-transform: capitalize;
+	text-transform: uppercase;
+	letter-spacing: 8px;
+	font-weight: 700;
+	text-align: center;
     }
     .testimonial-word {
         padding: 0;
