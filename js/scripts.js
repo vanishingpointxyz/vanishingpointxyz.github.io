@@ -29,7 +29,15 @@
  
 
 */
-
+/*
+//clickable tooltip
+$('xul xli').mouseenter(function(){
+  var pos = $(this).position();
+  $(this).find('xdiv').css('top', (pos.top)+50 + 'px').fadeIn();
+}).mouseleave(function(){
+  $(this).find('xdiv').fadeOut();
+});
+*/
 
 //contact
 var message = "";
